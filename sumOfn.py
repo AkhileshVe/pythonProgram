@@ -40,20 +40,24 @@
 
 # find the palandrome 
 
-i = 1
-n = int(input("enter a number : "))
-m = n
-rev = 0
-pal = ""
-while n>0 :
-    r = n % 10
-    rev = rev*10+r
-    n= n//10
+# i = 1
+# n = int(input("enter a number : "))
+# m = n
+# rev = 0
+# pal = ""
+# while n>0 :
+#     r = n % 10
+#     rev = rev*10+r
+#     n= n//10
 
-    if(rev == m):
-        pal = "palindrom"
-    else:
-         pal = "not palindrom"
-    i += 1
+#     if(rev == m):
+#         pal = "palindrom"
+#     else:
+#          pal = "not palindrom"
+#     i += 1
 
-print(pal)
+# print(pal)
+
+
+
+    
