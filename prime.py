@@ -23,16 +23,16 @@
 
 # prime number using for loop
 
-n = int(input("Enter a number: "))
-count = 0
+# n = int(input("Enter a number: "))
+# count = 0
 
-for x in  range(2,n):
-    if(n % x == 0):
-        count += 1
-        break
+# for x in  range(2,n):
+#     if(n % x == 0):
+#         count += 1
+#         break
     
 
-if(count == 0):
-    print(n, "is a prime number")
-else:
-    print(n, "is not a prime number")
+# if(count == 0):
+#     print(n, "is a prime number")
+# else:
+#     print(n, "is not a prime number")

@@ -134,3 +134,38 @@
 
 
 
+# i = 1
+# n= int(input("enter the value"))
+# fect = 1
+# sum = 0 
+# while(i<=n*2):
+   
+#     fect = fect * i
+#     print(fect, end = " ")
+#     if(n*2>i):
+#           print("*", end = " ")
+#     i+=1
+#     sum = sum + fect
+# print("factorial = ",sum)
+ 
+
+n = int(input("enter any number"))
+i = 1
+sum = 0
+
+while(i <= n):
+    j = 1
+    fact = 1
+    k=1
+    while(j<=n*2):
+        fact = fact *j
+        j+=1
+
+    if(k == 1):
+        sum =sum + fact
+        k=0
+    else:
+        sum =sum - fact
+        k=1
+    i+=1
+print(sum)
