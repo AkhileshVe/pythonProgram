@@ -36,3 +36,25 @@
 #     print(n, "is a prime number")
 # else:
 #     print(n, "is not a prime number")
+
+
+
+# ++++++++++++++++++++++++++++++++++++...4...+++++++++++++++++++++++++++
+
+# when i enter 10 the output is (2 3 5 7 11 13 17 19 23 29)
+
+n = int(input("enter any value : "))
+i = 2
+count = 0
+
+while count < n:
+    j=2
+    while j<i:
+        if( i % j == 0):
+            break
+        j += 1
+    if(j == i):
+        print(i, end=" ")
+        count +=1
+
+    i +=1
