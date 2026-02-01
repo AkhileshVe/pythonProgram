@@ -27,13 +27,31 @@
 # 153  Output = 153
 
 
+# n = int(input("enter any number : "))
+# length = len(str(n))
+
+# result = 0
+# for x in range(0,length):
+#     # print(x)
+#     r = n % 10
+#     result += r ** length 
+#     n = n // 10
+# print(result)
+
 n = int(input("enter any number : "))
 length = len(str(n))
+temp = n
+sum1 = 0
 
-result = 0
-for x in range(0,length):
-    # print(x)
-    r = n % 10
-    result += r ** length 
-    n = n // 10
-print(result)
+while temp > 0:
+    r = temp % 10
+    temp = temp // 10
+    sum1 = sum1 *10 + r
+    # print(sum1)
+    # sum = sum + r ** length
+if(sum1 == n):
+    print("palandrome")
+else:
+    print("not palandrome")
+    
+# print(sum)
