@@ -12,15 +12,14 @@ while i <=n:
     chemestry = int(input("Enter chemestry mark : "))
     maths = int(input("Enter maths mark : "))
     total_mark = physics+chemestry+maths
-    persent = total_mark/3
-
-    mr = [roll_no, name, physics, chemestry, maths, total_mark, persent]
+    persent = total_mark//3
+    mr = [ name, physics, chemestry, maths, total_mark, persent]
     rec.append(mr)
     i+=1
-# print(rec)
+print(rec)
 
 # Extended list with some failing marks for testing
-rec1 = [
+rec = [
     [101, "Akhil", 56, 54, 76, 186, 62.0],
     [102, "Rohit", 65, 60, 70, 195, 65.0],
     [103, "Ankit", 72, 68, 75, 215, 71.67],
@@ -47,87 +46,155 @@ rec1 = [
     [123, "Fail_Two", 30, 25, 80, 135, 45.0]
 ]
 
-print("Enter 1 for all list")
-print("Enter 2 for even list")
-print("Enter 3 for odd list")
-print("Enter 4 to search student detail by roll no.")
-print("Enter 5 for all pass student list")
-print("Enter 6 for all fail studentlist")
-print("Enter 7 for all first division student list")
-print("Enter 8 for all second division student list")
-print("Enter 9 for all third division student list")
-print("Enter 10 for who are fail in all subject")
-print("Enter 11 for who are fail in 1 subject")
-print("Enter 12 for who are fail in 2 subject")
 
-choice = int(input("Enter a number : " ))
-print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
+# print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
 
+loop = True
+# choice = int(input("Enter a number : " ))
+# for x in rec: 
+while loop:
+    print("Enter 1 for all list")
+    print("Enter 2 for even list")
+    print("Enter 3 for odd list")
+    print("Enter 4 to search student detail by roll no.")
+    print("Enter 5 for all pass student list")
+    print("Enter 6 for all fail studentlist")
+    print("Enter 7 for all first division student list")
+    print("Enter 8 for all second division student list")
+    print("Enter 9 for all third division student list")
+    print("Enter 10 for who are fail in all subject")
+    print("Enter 11 for who are fail in 1 subject")
+    print("Enter 12 for who are fail in 2 subject")
 
-for x in rec: 
-
+    choice = int(input("Enter a number : " ))
 #  for all list 
     if(choice == 1):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print("\t\t\t\t   \t""All list (1)")
+        print()
+        print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
+        for x in rec: 
+            print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
 #  for evevn 
-    if(x[0]%2 == 0 and choice == 2):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif( choice == 2):
+        print("\t\t\t\t  \t""Even list (2)")
+        print()
+        print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
+        for x in rec: 
+            if(x[0]%2 == 0):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
 
 #  for odd 
 
-    elif(x[0]%2 == 1 and choice == 3):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
-
+    elif(choice == 3):
+        print("\t\t\t\t    \t""Odd list (3)")
+        print()
+        print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
+        for x in rec:
+            if(x[0]%2 == 1): 
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
 
 # # for ? roll number
     elif(choice == 4):
-            roll_num = int(input("enter roll number : "))
-            for y in rec:
-                if(y[0]== roll_num):
-                    print("\t",y[0],"\t",y[1],"\t" ,y[2],"\t \t",y[3],"\t  \t",y[4], "\t",y[5], "\t\t ",y[6])
-
-
+        print("\t\t\t\t ""Search student detail by roll no. (4)")
+        print()
+        roll_num = int(input("enter roll number : "))
+        print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
+        for y in rec:
+            if(y[0]== roll_num):
+                print("\t",y[0],"\t",y[1],"\t" ,y[2],"\t \t",y[3],"\t  \t",y[4], "\t",y[5], "\t\t ",y[6])
+        print()
 
 #  who are pass ?
-    elif(x[2] >= 34 and x[3]>= 34 and x[4]>= 34 and x[6]>= 34  and choice == 5):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif(choice == 5):
+        print("\t\t\t\t\t""All pass student list (5)")
+        print()
+        print("\t"f"{'Roll':<6} {'Name':<12} {'Physics':<12} {'Chemistry':<12} {'Maths':<12} {'Total Mark':<12} {'Persentage':<12}")
+        for x in rec:
+            if(x[2] >= 34 and x[3]>= 34 and x[4]>= 34 and x[6]>= 34): 
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
 
 #  who are fail ?
     elif(x[6]<= 34 and x[2] <= 34 and x[3]<= 34 and x[4]<= 34 and choice == 6):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
-
+        print("\t\t\t\t\t""All fail student list (6)")
+        print()
+        for x in rec:
+             if(x[2] >= 34 and x[3]>= 34 and x[4]>= 34 and x[6]>= 34): 
+                 print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
+               
 
 #  who are first division ?
-    elif(x[6] >=60 and x[6]<=100 and choice == 7):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
-
+    elif(choice == 7):
+        print("\t\t\t\t""All first division student list (7)")
+        print()
+        for x in rec: 
+            if(x[6] >=60 and x[6]<=100):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
+                
 #  who are second division ?
-    elif(x[6] >= 45 and x[6]<=59 and choice == 8):
-         print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif(choice == 8):
+        print("\t\t\t\t""All second division student list (8)")
+        print()
+        for x in rec: 
+            if(x[6] >= 45 and x[6]<=59):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
  #  who are third division ?
-    elif(x[6] >= 33 and x[6]<=44 and choice == 9):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif(choice == 9):
+        print("\t\t\t\t\t""All third division student list (9)")
+        print()
+        for x in rec: 
+            if(x[6] >= 33 and x[6]<=44):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
  #  who are fail in all subject ?
-    elif(x[2]<=33 and x[3]<=33 and x[4]<=33 and choice == 10):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif(choice == 10):
+        print("\t\t\t\t\t""Fail in all subject student list (10)")
+        print()
+        for x in rec: 
+            if(x[2]<=33 and x[3]<=33 and x[4]<=33):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
 #  who are fail in one subject ?
-    elif(x[2]<=33 and x[3]>=33 and x[4]>=33 or
-         x[3]<=33 and x[4]>=33 and x[2]>=33 or 
-         x[4]<=33 and x[2]>=33 and x[3]>=33 and choice == 11):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif(choice == 11):
+        print("\t\t\t\t   \t""Fail in one subject (11)")
+        print()
+        for x in rec: 
+            if(x[2]<=33 and x[3]>=33 and x[4]>=33 or
+               x[3]<=33 and x[4]>=33 and x[2]>=33 or 
+               x[4]<=33 and x[2]>=33 and x[3]>=33 ):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
 
 #  who are fail in two subject ?
-    elif(choice == 12 and x[2]<=33 and x[3]<=33 and x[4]>=33 or
-         x[3]<=33 and x[4]<=33 and x[2]>=33 or 
-         x[4]<=33 and x[2]<=33 and x[3]>=33 ):
-        print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+    elif(choice == 12):
+        print("\t\t\t\t\t""Fail in two subject student list (12)")
+        print()
+        for x in rec: 
+            if(x[2]<=33 and x[3]<=33 and x[4]>=33 or
+               x[3]<=33 and x[4]<=33 and x[2]>=33 or 
+               x[4]<=33 and x[2]<=33 and x[3]>=33):
+                print("\t"f"{x[0]:<6} {x[1]:<12} {x[2]:<12} {x[3]:<12} {x[4]:<12} {x[5]:<12} {x[6]:<12}")
+        print()
+
+    elif(choice == 13):
+        loop = False
+
+    elif(choice >= 14):
+        print("\t\t\t\t   \t""invalid input please try again 💁🏼💁🏼")
             
+
+print("\t\t\t\t   \t""App bahar aa chuke hai 💁🏼💁🏼")
             
-    
