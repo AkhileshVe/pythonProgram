@@ -8,6 +8,6 @@ dic1 = {
 
 print(dic1)
 print(type(dic1))
-print(dic1[102])
+print(dic1[101])
 r = dic1.get(101)
 print(r)
