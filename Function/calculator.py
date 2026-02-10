@@ -51,3 +51,25 @@ def calculator():
     message("App calculator se bahar aa gaye")
 
 calculator()
+
+
+# def calculate(n1, n2, op):
+#     if op == "A":
+#         return n1 + n2
+#     elif op == "S":
+#         return n1 - n2
+#     elif op == "M":
+#         return n1 * n2
+#     elif op == "D":
+#         if n2 != 0:
+#             return n1 / n2
+#         else:
+#             return "Division by zero not allowed"
+
+
+# number = 123
+# leng = len(str(abs(number)))
+# i=1
+# n =number
+# while i < leng:
+#     x = n%10
