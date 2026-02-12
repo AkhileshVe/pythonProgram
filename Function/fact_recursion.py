@@ -1,5 +1,5 @@
 # def fact(x):
-#     print(x)
+#     # print(x)
 #     if(x == 1):
 #         f = 1
 #     else:
@@ -26,17 +26,20 @@
 
 # print the fibonacci seris using recursion (0,1,1,2,3,5,8,13,21)
 
-def fib(x):
-    y = x
-    z=1
-    # print(y)
-    if(y == 1):
-        f = 1
-    else:
-        f = y - fib(y-1)
-        z  += y 
-        print(z)
-    return f
 
-fib(21)
-# print(resu)
+
+
+
+
+
+
+# dusra tarika fabinachi
+def fib(x ,n1=0, n2=1):
+    if x > 0:
+        print(n1)
+        fib(x-1,n2,n1+n2)
+
+fib(8)
+     
+
+     
