@@ -34,12 +34,38 @@
 
 
 # dusra tarika fabinachi
-def fib(x ,n1=0, n2=1):
-    if x > 0:
-        print(n1)
-        fib(x-1,n2,n1+n2)
+# def fib(x ,n1=0, n2=1):
+#     if x > 0:
+#         print(n1)
+#         fib(x-1,n2,n1+n2)
 
-fib(8)
+# fib(8)
      
+
+# find the palandrome number
+
+i = 1
+n = int(input("enter any number : ")) #5268
+sum = 0
+rev = 0
+m = n
+result = ""
+while n>0:
+
+    # r = n % 10
+    # n = n // 10
+    # rev = rev *10 +r
+    # i += 1
+
+    r = n % 10
+    n = n // 10
+    rev = rev*10  + r 
+
+    if(rev==m):
+        result = "it is a palandrome"
+    else:
+        result = "it is not a palandrome"
+
+print(result)
 
      
