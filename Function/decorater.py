@@ -9,6 +9,3 @@ def display():
 ob = display()
 ob()
 
-
-add = lambda x,y : x+y
-ob = lambda x,y : x if x > y else y

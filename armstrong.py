@@ -38,6 +38,12 @@
 #     n = n // 10
 # print(result)
 
+
+
+
+# paslendrome
+
+
 n = int(input("enter any number : "))
 length = len(str(n))
 temp = n
