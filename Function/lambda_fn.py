@@ -46,5 +46,8 @@ print(ls)
 res = list(filter(lambda x: x% 2 == 0 , ls))
 res = set(filter(lambda x: x% 2 == 0 , ls))
 
-res = list(filter( x% 2 == 0 , ls))
-print(res)
+res = list(filter( lambda x : x % 2 != 0 , ls))
+res1 = list(filter( lambda x : x % 2 == 0 , ls))
+
+print("odd number",res )
+print("Even number",res1)
