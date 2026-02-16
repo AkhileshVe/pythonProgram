@@ -44,28 +44,37 @@
 
 # find the palandrome number
 
-i = 1
-n = int(input("enter any number : ")) #5268
-sum = 0
-rev = 0
-m = n
-result = ""
-while n>0:
+# i = 1
+# n = int(input("enter any number : ")) #5268
+# sum = 0
+# rev = 0
+# m = n
+# result = ""
+# while n>0:
 
     # r = n % 10
     # n = n // 10
     # rev = rev *10 +r
     # i += 1
 
-    r = n % 10
-    n = n // 10
-    rev = rev*10  + r 
+#     r = n % 10
+#     n = n // 10
+#     rev = rev*10  + r 
 
-    if(rev==m):
-        result = "it is a palandrome"
-    else:
-        result = "it is not a palandrome"
+#     if(rev==m):
+#         result = "it is a palandrome"
+#     else:
+#         result = "it is not a palandrome"
 
-print(result)
+# print(result)
+
+a = 0
+b = 1
+for x in range(1,8):
+    print(a)
+    c = a+b
+    a = b 
+    b = c
+
 
      

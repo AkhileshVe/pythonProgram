@@ -2,8 +2,8 @@
 # # can take any number of arguments but only one expression.
 
 # add = lambda x,y : x+y
-# ob1 = lambda x,y : x if x > y else y
-# print(ob1(24,45))
+ob1 = lambda x,y : x if x > y else y
+print(ob1(4,40))
 
 
 # # ++++++++++++++++++++  Inner lambda 
@@ -27,27 +27,42 @@
 
 # # ++++++++++++++++++++  
 # # ++++++++++++++++++++  
-# def add(x):
-#     def addTwo(y):
-#         def addTwo(z):
-#             return x+y+z
-#         return addTwo
-#     return addTwo
+def add(x):
+    def addTwo(y):
+        def addThree(z):
+            return x+y+z
+        return addThree
+    return addTwo
 
-# res = add(8)(15)(7)
-# print(res)
+res = add(8)(15)(7)
+print(res)
 
 # ++++++++++++++++++++  
     
 
-ls = [1,2,3,4,5,6,7,8]
-print(ls)
+# ls = [1,2,3,4,5,6,7,8]
+# print(ls)
 
-res = list(filter(lambda x: x% 2 == 0 , ls))
-res = set(filter(lambda x: x% 2 == 0 , ls))
+# res = list(filter(lambda x: x% 2 == 0 , ls))
+# res = set(filter(lambda x: x% 2 == 0 , ls))
 
-res = list(filter( lambda x : x % 2 != 0 , ls))
-res1 = list(filter( lambda x : x % 2 == 0 , ls))
+# res = list(filter( lambda x : x % 2 != 0 , ls))
+# res1 = list(filter( lambda x : x % 2 == 0 , ls))
 
-print("odd number",res )
-print("Even number",res1)
+# print("odd number",res )
+# print("Even number",res1)
+
+
+
+# Map using lambda
+
+ls = [1,2,3,4,5,6,7,8,9]
+
+squ = list(map(lambda x: x**2 ,ls))
+print(squ)
+
+
+friend_ls = ["akhilesh", 'raj', 'rohit', 'abhishek']
+
+length = set(map(lambda x: len(x) ,friend_ls))
+print(length)
