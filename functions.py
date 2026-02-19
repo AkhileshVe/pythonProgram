@@ -74,20 +74,54 @@
 # greatest(a,b,c,d)
 
 
-def check_Primre(x):
-    i = 2
-    flag =1
-    while i < x and flag == 1:
-        if(x % i==0):
-            flag = 0
-        i += 1
-    return flag 
+# def check_Primre(x):
+#     i = 2
+#     flag =1
+#     while i < x and flag == 1:
+#         if(x % i==0):
+#             flag = 0
+#         i += 1
+#     return flag 
 
-n = int(input("Enter a number : "))
+# n = int(input("Enter a number : "))
 
-res = check_Primre(n)
+# res = check_Primre(n)
 
-if(res == 1):
-    print("Prime number.......")
-else:
-    print("Not prime number ......")
+# if(res == 1):
+#     print("Prime number.......")
+# else:
+#     print("Not prime number ......")
+
+    #  prime number up to n using for loop 
+
+n = int(input("Enter any number: "))
+
+# for x in range(2, n):
+#     for j in range(2, x):
+#         if x % j == 0:
+#             break
+#     else:
+#         print(x)
+
+
+# for x in range(2,n):
+#     for j in range(2,x):
+#         if(x % j == 0):
+#             break
+#     else:
+#         print(x)
+
+count = 0
+i = 2
+while count < n:
+    j= 2
+    while( j < i):
+        if(i % j == 0):
+            break
+        j +=1
+    if(j == i):
+        count +=1
+        print(i)
+    i +=1
+
+

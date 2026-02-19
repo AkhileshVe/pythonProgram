@@ -58,3 +58,15 @@ while count < n:
         count +=1
 
     i +=1
+
+
+#  prime number up to n using for loop 
+
+n = int(input("Enter any number: "))
+
+for x in range(2, n):
+    for j in range(2, x):
+        if x % j == 0:
+            break
+    else:
+        print(x)

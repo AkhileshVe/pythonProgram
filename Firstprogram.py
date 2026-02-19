@@ -46,7 +46,7 @@ def palandrome(n):
         b = c
         i += 1
     print(c)
-palandrome(8)
+palandrome(9)
     
 
 
