@@ -4,6 +4,9 @@ import random
 pl1 = 0
 pl2 = 0
 
+snw_out= { 29:9, 38:15, 47:5, 53:33, 62:37, 86:54, 92:70, 97:25 }
+law_out = { 2:23, 8:34, 20:77, 32:68, 41:79, 74:88, 85:95, 82:100 }
+
 sn  = { 29:9, 38:15, 47:5, 53:33, 62:37, 86:54, 92:70, 97:25 }
 la = { 2:23, 8:34, 20:77, 32:68, 41:79, 74:88, 85:95, 82:100 }
 
@@ -22,7 +25,6 @@ def first_player(player1,dice,snake,ladder):
         player1 = ladder[player1]
     
     print("player1 is ",player1," place")
-
 
     
 def second_player(player2,dice,snake,ladder,p2):
