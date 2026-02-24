@@ -4,9 +4,6 @@ import random
 pl1 = 0
 pl2 = 0
 
-snw_out= { 29:9, 38:15, 47:5, 53:33, 62:37, 86:54, 92:70, 97:25 }
-law_out = { 2:23, 8:34, 20:77, 32:68, 41:79, 74:88, 85:95, 82:100 }
-
 sn  = { 29:9, 38:15, 47:5, 53:33, 62:37, 86:54, 92:70, 97:25 }
 la = { 2:23, 8:34, 20:77, 32:68, 41:79, 74:88, 85:95, 82:100 }
 
@@ -15,7 +12,7 @@ def first_player(player1,dice,snake,ladder):
             input("you get extra chance press 1 for through the dice for player1: ")
             print("you get the score is : ",dice)
             player1 += dice
-        
+
     if player1 in snake:
         print("sanke is bitten you")
         player1 = snake[player1]
