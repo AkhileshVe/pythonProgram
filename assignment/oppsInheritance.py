@@ -179,15 +179,25 @@
 
 
 # ======================================== herachichal 
-from abc import abstractmethod,ABC
-class Test(ABC):
+# from abc import abstractmethod,ABC
+# class Test(ABC): 
+#     def __init__(self,x=0):
+#         self.x=x
+    
+#     @abstractmethod
+#     def display(self):
+#         pass
+
+
+# class 1
+class Test: 
     def __init__(self,x=0):
         self.x=x
-    
-    @abstractmethod
-    def display(self):
-        pass
 
+    def display(self):
+         print("X = ",self.x,)
+
+# class 2
 class Test2(Test):
     def __init__(self, x=0,y=0):
         super().__init__(x)
@@ -196,6 +206,7 @@ class Test2(Test):
         print("X = ",self.x, end=" ")
         print("Y = ",self.y)
 
+# class 3
 class Test3(Test2):
     def __init__(self, x=0,y=0,z=0):
         Test2.__init__(self,x,y)
