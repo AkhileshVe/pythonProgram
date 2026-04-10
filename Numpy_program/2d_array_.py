@@ -89,4 +89,3 @@ print(slarr[0:2,2:3])# [[30][600]]
 print(slarr.shape)
 print(slarr.shape[0])
 print(slarr.shape[1])
-# rkfnd jknrkjfdnjkr
