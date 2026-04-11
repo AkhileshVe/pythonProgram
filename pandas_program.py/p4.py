@@ -29,3 +29,10 @@ print("tex_total.  : ",tex_total)
 print("da_total.  : ",da_total)
 print("ta_total.  : ",ta_total)
 print("salary_total.  : ",salary_total)
+
+
+
+print("tex_total.  : ",tex_total)
+print("da_total.  : ",da_total)
+print("ta_total.  : ",ta_total)
+print("salary_total.  : ",salary_total)
