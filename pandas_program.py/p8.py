@@ -137,3 +137,14 @@ print(student_course_cross)
 # 29           8        priya   28  SEO   406        402         BBA       45200          3years
 # 30           8        priya   28  SEO   406        403          BA       25000          3years
 # 31           8        priya   28  SEO   406        405         MCA       78000          3years
+
+
+
+
+# student = {
+#     "student_id": [1,2,3,4,5,6,7,8],
+#     "student_name": ["raj","ravi","riya","rahul","ritesh","jiya","tiya","priya"],
+#     "age":[26,27,28,26,27,26,27,28],
+#     "city": ["ind","bpl","jab","sat","ujj","Dev","KTE","SEO"],
+#     "c_id": [401,401,402,402,403,403,406,406]
+# }
