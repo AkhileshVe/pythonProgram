@@ -43,11 +43,4 @@ df.to_sql('student', if_exists='replace', con=engine)
 
 
 
-# student={
-#     "rno":[101,102, 103,104,105],
-#     "name":["raj", "ravi", "rahul", "ritesh", "nimesh" ],
-#     "age":[26,27,None,26,27],
-#     "gender":["male","male","female","male","male"],
-#     "city": ["ind","bpl","jab","sat","ujjain"],
-#     "fee":[30000,35000,40000,None,None]
-# }
+
